@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do App</title>
+        <style>
+            body {
+                background: linear-gradient(to right, #1003cc, #03bef7);
+                font-family: Arial, sans-serif;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+            form, div {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            input, select, button {
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+                border: none;
+            }
+            button {
+                background-color: #ff7e5f;
+                color: #fff;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #feb47b;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TO DO APP</h1>
+        <div>
+            <form id="taskForm">
+                <label for="taskInput">TASK: </label>
+                <input type="text" id="taskInput" name="taskInput" placeholder="Enter task..." required>
+                <select id="priorityInput" name="priorityInput">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <input type="date" id="dueDateInput" name="dueDateInput">
+                <input type="time" id="dueTimeInput" name="dueTimeInput">
+                <input type="text" id="descriptionInput" name="descriptionInput" placeholder="Enter description...">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div>
+            <select id="statusFilter" name="statusFilter">
+                <option value="all">All Tasks</option>
+                <option value="active">Active Task</option>
+                <option value="completed">Completed Task</option>
+            </select>
+            <select id="priorityFilter" name="priorityFilter">
+                <option value="all">All Priorities</option>
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+        </div>
+        <div id="todoList"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
