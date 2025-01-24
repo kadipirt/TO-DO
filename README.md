@@ -23,6 +23,6 @@
 
 ##  *----------------------------------------- Contributors. -----------------------------------------*
 
-                                        -- Truther Kadipir [@]
+                                        -- Truther Kadipir ([@kadipirt](https://github.com/kadipirt))
 
-                                        -- Maragia Rodgers [@Rockjunior] {r28081999m@gmail.com}
+                                        -- Maragia Rodgers ([@Rockjunior](https://github.com/Rockjunior))
